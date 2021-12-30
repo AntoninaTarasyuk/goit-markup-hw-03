@@ -1,0 +1,187 @@
+/* Цвет текста 1 - color: #212121; */
+/* Цвет текста 2 - color: #757575; */
+/* Цвет текста 3 - color: #FFFFFF; */
+/* Цвет фона страницы - color: #FFFFFF; */
+/* Цвет фона страницы 2 - color: #F5F4FA; */
+/* Цвет фона баннера и футера - color: #2F303A; */
+/* Цвет фона кнопок на стр. Портфолио - color: #F5F4FA; */
+/* Цвет акцента (фон,текст,кнопки, ссылки) color: #2196F3; */
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --dark-bg-text-color: #ffffff;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --second-bg-color: #f5f4fa;
+  --banner-bg-color: #2f303a;
+  --footer-bg-color: #2f303a;
+}
+.body {
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--primary-bg-color);
+}
+.list {
+  list-style: none;
+}
+.link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+/* Шапка сайта */
+.logo {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+.logo-decor {
+  color: var(--title-text-color);
+}
+.logo:hover,
+.logo:focus {
+  text-decoration: underline;
+}
+.site-nav .link {
+  color: var(--title-text-color);
+}
+ul .link.current {
+  color: var(--accent-color);
+}
+.site-nav .link:focus,
+.link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+.contacts-nav .link {
+  color: var(--primary-text-color);
+}
+.contacts-nav .link:focus,
+.link:hover {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* Стили главной страницы */
+/* Баннер на главной странице */
+.banner {
+  background: var(--banner-bg-color);
+}
+.banner-name {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-text-color);
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Кнопка на баннере */
+.banner-btn {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--dark-bg-text-color);
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  border: 0px;
+  border-radius: 4px;
+}
+.banner-btn:hover,
+.banner-btn:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.section-title {
+  font-size: 36px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+  text-align: center;
+}
+/* .hidden {} Этот клас прячет заголовки */
+
+.features-title {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--title-text-color);
+}
+.features-text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.person-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: var(--title-text-color);
+}
+.person-proffesion {
+  font-size: 16px;
+  line-height: 1.2;
+}
+.our-team {
+  background: var(--second-bg-color);
+}
+
+/* Страница портфолио */
+/* Кнопки страницы портфолио */
+.btn {
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--title-text-color);
+  background: #f5f4fa;
+  border: 0px;
+  border-radius: 4px;
+}
+.btn:hover,
+.btn:focus {
+  color: var(--dark-bg-text-color);
+  background: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* Текст страницы портфолио */
+.work-title {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.work-name {
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Подвал сайта */
+.footer {
+  background-color: var(--footer-bg-color);
+}
+.logo-decor-footer {
+  color: var(--dark-bg-text-color);
+}
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--dark-bg-text-color);
+}
+.link.address {
+  color: rgba(255, 255, 255, 0.6);
+}
+.link.address:focus,
+.link.address:hover {
+  color: var(--accent-color);
+}
