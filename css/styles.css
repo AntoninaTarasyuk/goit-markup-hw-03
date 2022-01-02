@@ -16,6 +16,14 @@
   --banner-bg-color: #2f303a;
   --footer-bg-color: #2f303a;
 }
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 .body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
@@ -68,39 +76,54 @@ ul .link.current {
 }
 
 /* Стили главной страницы */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
 /* Баннер на главной странице */
 .banner {
   background: var(--banner-bg-color);
+  text-align: center;
 }
 .banner-name {
+  margin-top: 0;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
-  text-align: center;
   text-transform: uppercase;
+
+  background-color: violet;
 }
 /* Кнопка на баннере */
 .banner-btn {
   font-family: inherit;
   cursor: pointer;
+  /* border: 1px solid transparent; */
   font-weight: bold;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
-  width: 200px;
-  height: 50px;
   background: var(--accent-color);
   border: 0px;
   border-radius: 4px;
+  padding: 10px 32px;
+  text-align: center;
 }
 .banner-btn:hover,
 .banner-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.2;
   color: var(--title-text-color);
