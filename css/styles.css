@@ -50,11 +50,21 @@ html {
   margin-left: auto;
   margin-right: auto;
 
-  /* background-color: violet; */
+  background-color: violet;
 }
 
 /* Шапка сайта */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
 .logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
   font-family: Raleway;
   font-size: 26px;
   line-height: 1.2;
@@ -68,18 +78,39 @@ html {
 .logo:focus {
   text-decoration: underline;
 }
-.site-nav .link {
-  color: var(--title-text-color);
+.site-nav {
+  display: flex;
+  margin-left: 93px;
 }
-ul .link.current {
-  color: var(--accent-color);
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  color: var(--title-text-color);
 }
 .site-nav .link:focus,
 .link:hover {
   color: var(--accent-color);
   text-decoration: underline;
 }
+ul .link.current {
+  color: var(--accent-color);
+}
+
+.contacts-nav {
+  display: flex;
+  margin-left: auto;
+}
+.contacts-nav .item + .item {
+  margin-left: 50px;
+}
 .contacts-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 .contacts-nav .link:focus,
@@ -144,22 +175,30 @@ ul .link.current {
   padding-bottom: 0px;
 }
 .features-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   margin-top: 0;
   font-size: 14px;
   line-height: 1.14;
   color: var(--title-text-color);
 }
 .features-text {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 14px;
   line-height: 1.71;
 }
 .person-name {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   color: var(--title-text-color);
 }
 .person-proffesion {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 16px;
   line-height: 1.2;
 }
@@ -190,12 +229,16 @@ ul .link.current {
 
 /* Текст страницы портфолио */
 .work-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 .work-name {
+  margin-top: 0px;
+  margin-bottom: 0px;
   font-size: 16px;
   line-height: 1.88;
 }
@@ -211,7 +254,6 @@ ul .link.current {
 }
 .address {
   margin-top: 20px;
-  /* margin-bottom: 9px; */
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -219,6 +261,9 @@ ul .link.current {
   color: var(--dark-bg-text-color);
 }
 .link.address {
+  display: inline-block;
+  margin-top: 9px;
+  margin-bottom: 0px;
   color: rgba(255, 255, 255, 0.6);
 }
 .link.address:focus,
