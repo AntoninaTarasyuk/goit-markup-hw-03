@@ -50,9 +50,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  /* background-color: yellow; */
+  /* background-color: salmon; */
 }
-
+img {
+  display: block;
+}
 /* Шапка сайта */
 .header {
   border-bottom: 1px solid #cecece;
@@ -153,13 +155,13 @@ ul .link.current {
   padding: 10px 32px;
   text-align: center;
   cursor: pointer;
-  /* border: 1px solid transparent; */
 }
 .banner-btn:hover,
 .banner-btn:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+/* Секции */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -262,7 +264,6 @@ ul .link.current {
   width: 370px;
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: 1px solid #eeeeee;
 }
 .work-item:nth-child(3n) {
   margin-right: 0;
@@ -273,8 +274,16 @@ ul .link.current {
 .work-link {
   text-decoration: none;
 }
+.work-frame {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
 .work-title {
-  margin-top: 20px;
+  margin-top: 0;
   margin-bottom: 4px;
   font-size: 18px;
   line-height: 2;
@@ -282,8 +291,8 @@ ul .link.current {
   color: var(--title-text-color);
 }
 .work-name {
-  margin-top: 0px;
-  margin-bottom: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.88;
   color: var(--primary-text-color);
@@ -302,24 +311,32 @@ ul .link.current {
 .logo-decor-footer {
   color: var(--dark-bg-text-color);
 }
-.address {
+.address-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   margin-top: 20px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
+}
+.address-item:not(:first-child) {
+  margin-top: 9px;
+}
+.address-link {
+  text-decoration: none;
   color: var(--dark-bg-text-color);
 }
-.link.address {
-  display: block;
-  margin-top: 9px;
-  margin-bottom: 0px;
-  color: rgba(255, 255, 255, 0.6);
-}
-.link.address:focus,
-.link.address:hover {
+.address-link:hover,
+.address-link:focus {
+  text-decoration: underline;
   color: var(--accent-color);
 }
+.contact {
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /* Прячет то, что нужно спрятать :) */
 .hidden {
   position: absolute;
