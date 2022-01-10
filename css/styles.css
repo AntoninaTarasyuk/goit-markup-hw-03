@@ -98,7 +98,7 @@ ul .link.current {
   color: var(--title-text-color);
 }
 .site-nav .link:focus,
-.link:hover {
+.site-nav .link:hover {
   color: var(--accent-color);
 }
 
@@ -115,7 +115,7 @@ ul .link.current {
   color: var(--primary-text-color);
 }
 .contacts-nav .link:focus,
-.link:hover {
+.contacts-nav .link:hover {
   color: var(--accent-color);
 }
 
