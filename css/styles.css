@@ -57,7 +57,7 @@ img {
 }
 /* Шапка сайта */
 .header {
-  border-bottom: 1px solid #cecece;
+  border-bottom: 1px solid #ececec;
 }
 .main-nav,
 .nav {
@@ -80,7 +80,7 @@ img {
 }
 .logo:hover,
 .logo:focus {
-  text-decoration: underline;
+  text-decoration: none;
 }
 .site-nav {
   margin-left: 93px;
@@ -100,7 +100,6 @@ ul .link.current {
 .site-nav .link:focus,
 .link:hover {
   color: var(--accent-color);
-  text-decoration: underline;
 }
 
 .contacts-nav {
@@ -118,7 +117,6 @@ ul .link.current {
 .contacts-nav .link:focus,
 .link:hover {
   color: var(--accent-color);
-  text-decoration: underline;
 }
 
 /* Стили главной страницы */
@@ -128,7 +126,7 @@ ul .link.current {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background: var(--banner-bg-color);
+  background-color: var(--banner-bg-color);
 }
 .banner-name {
   margin-top: 0;
@@ -138,10 +136,11 @@ ul .link.current {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
-  text-transform: uppercase;
 }
 /* Кнопка на баннере */
 .banner-btn {
+  padding: 10px 32px;
+
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
@@ -149,16 +148,11 @@ ul .link.current {
   letter-spacing: 0.06em;
   color: var(--dark-bg-text-color);
 
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   border: 0px;
   border-radius: 4px;
-  padding: 10px 32px;
-  text-align: center;
+
   cursor: pointer;
-}
-.banner-btn:hover,
-.banner-btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Секции */
@@ -209,8 +203,12 @@ ul .link.current {
 .person .item:not(:last-child) {
   margin-right: 30px;
 }
+.person-discription {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .person-name {
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -219,12 +217,12 @@ ul .link.current {
 }
 .person-proffesion {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-size: 16px;
   line-height: 1.2;
 }
 .our-team {
-  background: var(--second-bg-color);
+  background-color: var(--second-bg-color);
   text-align: center;
 }
 
@@ -238,20 +236,24 @@ ul .link.current {
   margin-bottom: 50px;
 }
 .btn {
-  cursor: pointer;
+  padding: 6px 22px;
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   color: var(--title-text-color);
-  background: #f5f4fa;
+
+  background-color: var(--second-bg-color);
   border: 0px;
   border-radius: 4px;
+
+  cursor: pointer;
 }
 .btn:hover,
 .btn:focus {
   color: var(--dark-bg-text-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -275,9 +277,7 @@ ul .link.current {
   text-decoration: none;
 }
 .work-frame {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 24px;
+  padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -330,7 +330,6 @@ ul .link.current {
 }
 .address-link:hover,
 .address-link:focus {
-  text-decoration: underline;
   color: var(--accent-color);
 }
 .contact {
